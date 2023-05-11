@@ -1,0 +1,266 @@
+/*body*/
+body{
+	/*para colocar una imagen de fondo*/
+	background-image:url(../imagenes/fondo5.jpg);
+	/*para que no se repita la imagen de fondo:*/
+	background-repeat: no-repeat;
+	/*para ajustar la imagen de fondo:*/
+		background-size:100% 100%;
+	/*para colocar color al fondo*/
+	/*background-color:#000000;*/ 
+	font-family:type;
+	/*para modificar el numero de letra , se expresa en pixeles */
+	font-size: 40px;
+	/*para modificar el color de la letra*/
+	color #81D4FA;
+}
+hr{
+	/*modifica el grosor de, el color y como se ve de la letra */
+	border: 5px solid #0D47A1;
+	/*modifica la punta de la linea*/
+	border-radius: 5px;
+	
+}
+p{
+	text-align: center;
+	font-size:20px;
+	color:blue;
+}
+table,td,tr{
+	/*linea, grosor y tipo de linea*/
+	border:3px solid;
+	/*color de la linea*/
+	border-color:#5DADE2;
+	/*alineacion del texto*/
+	text-align: center;
+	/*color del fondo*/
+	background-color:#154360;
+	
+}
+th{
+	background-color:#85C1E9;
+}
+ul{
+	/*indica el tipo de la viñeta*/
+	list-style-type:circle;
+	list-style-position: inside;
+}
+ol{
+	/*algunos de los valores de list-type son:
+	lower-alpha; lower-roman; upper-alpha; upper-roman;
+	a,b,c,d,e,f i.ii.iii.iv A,B,C,D,F I.II.III.IV*/
+	list-style-type:upper-roman;
+	list-style-position: inside; 
+}
+.pie{
+	text-align: center;
+	font-size:8px;
+	color: #21618C;
+	font-family: tipo;
+	font-weight: bold;
+}
+.title{
+	font-size:65px;
+	font-family:mifuente;
+	text-align: center;
+	color:000000;
+	font-weight:bold;
+}
+.table-text{
+	font-size:20px;
+	font-family:lista;
+	text-align: center;
+	color:000000;
+	font-weight:bold;
+}
+.title-text{
+	font-size:25px;
+	color:000000;
+	font-weight:bold;
+	text-align: center;
+	font-family:sub;
+}
+.img-marque{
+	width:350px;
+	height:400px;
+	border-radius:10px;
+	border:5px solid #0032B8
+}
+.botones{
+	border-radius:60%;
+	width:95px;
+	height:95px;
+	
+}
+.img-table{
+	width:150px;
+	height:150px;
+}
+.otrasimg{
+	width:200px;
+	height:150px;
+	border-radius:10px;
+	border:5px solid #0032B8;
+}
+@font-face{
+	 font-family:mifuente;
+	 src: url("../fuentes/Gashington Classy.ttf")
+}
+@font-face{
+	 font-family:sub;
+	 src: url("../fuentes/JAi_____.ttf")
+}
+@font-face{
+	 font-family:lista;
+	 src: url("../fuentes/Cherry Monospace-Light.ttf")
+}
+@font-face{
+	 font-family:type;
+	 src: url("../fuentes/big_noodle_titling.ttf")
+}
+@font-face{
+	 font-family:tipo;
+	 src: url("../fuentes/Anja Eliane accent002.ttf")
+}
+/*uso de div´s*/
+/*div o caja para el encabezado*/
+*{
+	margin:0px;
+	padding:0px;
+}
+
+div#top{
+	width:100%;
+	height:100px;
+	background-image:linear-gradient(#2E86C1,#7FB3D5);
+}
+div#principal{
+	margin:auto;
+	margin-top:10px;
+	width:100%;
+	height:1390px;
+	background-image:linear-gradient(#D6EAF8,#2E86C1,#D6EAF8);
+}
+div#piep{
+	margin-top:10px;
+	width:100%;
+	height:100px;
+	background-image:linear-gradient(#2E86C1,#7FB3D5);
+}
+div#p{
+	width:100%;
+	height:500px;
+	background-image:linear-gradient(#2E86C1,#7FB3D5);
+}
+div#p3{
+	width:1000px;
+	height:800px;
+	background-image:linear-gradient(#2E86C1,#7FB3D5);
+}
+div#p4{
+	width:1050px;
+	height:420px;
+	background-image:linear-gradient(#2E86C1,#7FB3D5);
+}
+div#p5{
+	width:1000px;
+	height:580px;
+	background-image:linear-gradient(#2E86C1,#7FB3D5);
+}
+.caja{
+	height:300px;
+	width:200px;
+	background:#eee;
+	border:1px solid #eee;
+	margin:5px;
+	color:black;
+	text-align:center;
+	display:inline-block;
+}
+.caja:hover{
+	box-shadow:0 0 10px blue;
+	transform:scale(1.3);
+}
+.caja-texto{
+	padding-top:2px;
+	font-size:20px;
+	color:blue;
+	font-weight:bold;
+}
+.texto-adicional{
+	padding-top:5px;
+	font-size:15px;
+}
+.carrousel{
+    width:600px;
+    margin:auto;
+    box-sizing:border-box;
+}
+.conteCarrousel{
+    width:100%;
+    height:400px;
+    overflow:hidden;
+    box-sizing:border-box;
+}
+.itemCarrousel{
+    position:relative;
+    width:100%;
+    height:100%;
+    box-sizing:border-box;
+}
+.itemCarrouselTarjeta{
+    width:100%;
+    height:100%;
+    box-sizing:border-box;
+}
+.itemCarrouselArrows{
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    height:100%;
+    width:100%;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:20px;
+    box-sizing:border-box;
+}
+.itemCarrouselArrows >i :hover{
+    cursor:pointer;
+}
+.conterCarrouselController{
+    width:100%;
+    display:flex;
+    justify-content:space-between;
+}
+.conterCarrouselController >a{
+    text-decoration:none;
+    font-size:32px;
+    color:grey;
+}
+.itemCarrouselArrows >a >i {
+    color:white;
+}
+.tt{
+	width:400px;
+	background-image:linear-gradient(#33BEFF,#FFFFFF);
+	font-size:20px;
+	color:black;
+}
+.m{
+	background:#16A085;
+	border:1px solid #000000;
+	margin:3px;
+	color:black;
+	text-align:;
+	display:inline-block;
+	width:100px;
+	height:100px;
+	border-radius:40%;
+}
+.m:hover{
+	box-shadow:0 0 90px #000000;
+	transform:scale(1.3);
+}
